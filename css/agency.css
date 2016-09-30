@@ -18,8 +18,10 @@ body {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 16px;
+    line-height: 2em;
+    text-align: left;
+
 }
 
 p.large {
@@ -35,14 +37,14 @@ a.active {
 }
 
 a {
-    color: #eb9631;
+    color: #e55722;
 }
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-    color: #eb9631;
+    color: #e55722;
 }
 
 h1,
@@ -119,14 +121,14 @@ fieldset[disabled] .btn-primary.active {
 
 .btn-xl {
     padding: 20px 40px;
-    border-color: #eb9631;
+    border-color: #ec6938;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #eb9631;
+    background-color: #ec6938;
 }
 
 .btn-xl:hover,
@@ -134,9 +136,9 @@ fieldset[disabled] .btn-primary.active {
 .btn-xl:active,
 .btn-xl.active,
 .open .dropdown-toggle.btn-xl {
-    border-color: #DA8826;
+    border-color: #e55722;
     color: #fff;
-    background-color: #DA8826;
+    background-color: #e55722;
 }
 
 .btn-xl:active,
@@ -171,23 +173,23 @@ fieldset[disabled] .btn-xl.active {
 
 .btn-sm {
     padding: 10px 20px;
-    border-color: #eb9631;
+    border-color: #ec6938;
     border-radius: 3px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 15px;
     font-weight: 400;
     color: #fff;
-    background-color: #eb9631;
+    background-color: #ec6938;
 }
 
 .btn-sm:hover,
 .btn-sm:focus,
 .btn-sm:active,
 .btn-sm.active{
-    border-color: #DA8826;
+    border-color: #e55722;
     color: #fff;
-    background-color: #DA8826;
+    background-color: #e55722;
 }
 
 .navbar-default {
@@ -201,7 +203,7 @@ fieldset[disabled] .btn-xl.active {
     padding: 0;
 }
 .navbar-default .navbar-brand img.workface-logo{
-    width: 60%;
+    width: 50%;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -212,21 +214,21 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-collapse {
-    border-color: rgba(255,255,255,.02);
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #eb9631;
-    background-color: #eb9631;
+    background: #ecf0f1;
+    border: 1px solid #d4d8d9;
+    margin-left: 9px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #353434;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #eb9631;
+    background-color: #e7e7e7;
 }
 
 .navbar-default .nav li a {
@@ -234,30 +236,32 @@ fieldset[disabled] .btn-xl.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #fff;
+    color: #1F1D1D;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #eb9631;
+    color: #eb6030;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #eb9631;
+    background-color: #ec6938;
+    padding: 10px 15px;
+    margin: 5px 0 0 0;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #DA8826;
+    background-color: #ec6938;
 }
 
 @media(min-width:768px) {
     .navbar-default {
-        padding: 25px 0;
+        padding: 5px 0;
         border: 0;
         background-color: transparent;
         -webkit-transition: padding .3s;
@@ -277,8 +281,9 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: #146663;
+        padding: 5px 0;
+        border-bottom: 1px solid #e0e4e5;
+        background: rgba(255,255,255,.95);
     }
 
     .navbar-default.navbar-shrink .navbar-brand img.workface-logo{
@@ -288,15 +293,8 @@ fieldset[disabled] .btn-xl.active {
 
 header {
     text-align: center;
-    color: #fff;
+    color: #1F1D1D;
     background-attachment: scroll;
-    background-image: url("http://i.imgur.com/K4QLZbu.png");
-    background-position: center center;
-    background-repeat: none;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 header .intro-text {
@@ -306,9 +304,10 @@ header .intro-text {
 
 header .intro-text .intro-lead-in {
     margin-bottom: 25px;
-    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
     font-size: 22px;
     line-height: 22px;
+    color: #e55722;
 }
 
 header .intro-text .intro-lead-in .time,header .intro-text .intro-lead-in .location{
@@ -325,31 +324,41 @@ header .intro-text .intro-heading {
 header .intro-text .intro-word p{
     font-size: 18px;
 }
+header .img-header{
+    max-width: 1200px;
+    margin: -230px auto 0 -30px;
+    float: left;
+    width: 106%;
+}
+header .intro-text .intro-lead-in .location .map-detail{
+    font-size: 16px;
+}
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 230px;
+        padding-top: 95px;
         padding-bottom: 55px;
     }
 
     header .intro-text .intro-lead-in {
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 40px;
+        color: #e55722;
     }
 
     header .intro-text .intro-heading {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
-        font-size: 60px;
         font-weight: 700;
-        line-height: 75px;
-        text-shadow: 2px 2px 3px #333;
+        line-height: 55px;
+        font-size: 5rem;
+        letter-spacing: 1.5px;
     }
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
 }
 
 section h2.section-heading {
@@ -375,7 +384,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 100px 0;
+        padding: 50px 0;
     }
 }
 
@@ -886,12 +895,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #eb9631;
+    background: #ec6938;
 }
 
 ::selection {
     text-shadow: none;
-    background: #eb9631;
+    background: #ec6938;
 }
 
 img::selection {
@@ -961,6 +970,7 @@ body {
     margin:10px 0 10px 0;
     color: #777;
     text-align: justify;
+    line-height: 1.75;
 }
 .boothlist{
     margin:0 0 30px 0;
@@ -976,26 +986,29 @@ ul#tabs {
     margin-bottom: 50px;
 }
 .nav-pills>li {
-    width: 260px;
-    border: 1px solid #EB9631;
-    font-size: 15px;
+    margin: 0 30px 0 0;
+    font-size: 2.4rem;
 }
 .nav-pills>li+li{
-    margin-left: 0px;
+    margin: 0px;
 }
 .nav-pills>li>a {
     border-radius: 0px;
-    color: #EB9631;
-    background-color: #ffffff;
-    height: 61px;
-    line-height: 61px;
+    color: rgb(161, 161, 161);
+    background-color: transparent;
     padding: 0;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+}
+.nav-pills>li>a:hover{
+    color: #ec6938;
+    background-color: transparent;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus{
-    color: #ffffff;
-    background-color: #EB9631;
+    color: #ec6938;
+    background-color: transparent;
+    border-bottom: 2px solid #ec6938;
 }
 .tab-content>.tab-pane{
     padding: 0 140px;
@@ -1083,7 +1096,8 @@ ul#tabs {
 }
 @media screen and (max-width: 767px) {
     .navbar-default{
-        background-color: #146663;
+        border-bottom: 1px solid #e0e4e5;
+        background: rgba(255,255,255,.95);
     }
     .navbar-default .navbar-brand img.workface-logo{
         width: 42%;
