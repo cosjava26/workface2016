@@ -816,7 +816,11 @@ ul.social-buttons li a:active {
 .btn:active:focus {
     outline: 0;
 }
-
+.portfolio-modal .modal-dialog{
+    margin: 0;
+    height: 100%;
+    width: auto;
+}
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
