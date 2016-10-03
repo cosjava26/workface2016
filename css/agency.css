@@ -270,6 +270,7 @@ fieldset[disabled] .btn-xl.active {
     }
 
     .navbar-default .navbar-brand {
+        /* width: 49%; */
         font-size: 2em;
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
@@ -289,6 +290,13 @@ fieldset[disabled] .btn-xl.active {
     .navbar-default.navbar-shrink .navbar-brand img.workface-logo{
         width: 50%;
     }
+    .navbar-header{
+        width: 49%;
+    }
+}
+
+@media(min-width:320px) {
+    
 }
 
 header {
@@ -1062,6 +1070,9 @@ ul#tabs {
         float: none;
         width: 100%;
     }
+    header .img-header{
+        margin: -135px auto 0 -11px;
+    }
 
 }
 @media screen and (max-width: 640px) {
@@ -1096,6 +1107,9 @@ ul#tabs {
     #table_day2{
         margin-top: 50px;
     }
+    header .img-header{
+        margin: -142px auto 0 -11px;
+    }
 
 }
 @media screen and (max-width: 767px) {
@@ -1104,10 +1118,22 @@ ul#tabs {
         background: rgba(255,255,255,.95);
     }
     .navbar-default .navbar-brand img.workface-logo{
-        width: 42%;
+        width: 48%;
         margin: 4px 0 0 10px;
     }
     header .intro-text .intro-lead-in .time{
         margin-bottom: 15px;
+    }
+    .navbar-default .navbar-brand{
+        position: absolute;
+    }
+    header .img-header{
+        margin: -180px auto 0 -15px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    header .img-header{
+        margin: -180px auto 0 -15px;
     }
 }
