@@ -1053,28 +1053,33 @@ ul#tabs {
 .table-mobile {
     display: none;
 }
-@media screen and (max-width: 480px) {
-    section h2.section-heading img.workshop-logo{
-        width: 110px;
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    header .img-header{
+        margin: -180px auto 0 -15px;
     }
-    .sharelist{
-        max-height: none;
-        height: 100%;
-        text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .navbar-default{
+        border-bottom: 1px solid #e0e4e5;
+        background: rgba(255,255,255,.95);
     }
-    .sharelist .sharelist-presenter{
-        float: none;
-        width: 100%;
+    .navbar-default .navbar-brand img.workface-logo{
+        width: 48%;
+        margin: 4px 0 0 10px;
     }
-    .sharelist .sharelist-content{
-        float: none;
-        width: 100%;
+    header .intro-text .intro-lead-in .time{
+        margin-bottom: 15px;
+    }
+    .navbar-default .navbar-brand{
+        position: absolute;
     }
     header .img-header{
-        margin: -135px auto 0 -11px;
+        margin: -180px auto 0 -15px;
     }
-
 }
+
 @media screen and (max-width: 640px) {
     #my-tab-content,ul#tabs{
         display:none
@@ -1112,28 +1117,26 @@ ul#tabs {
     }
 
 }
-@media screen and (max-width: 767px) {
-    .navbar-default{
-        border-bottom: 1px solid #e0e4e5;
-        background: rgba(255,255,255,.95);
-    }
-    .navbar-default .navbar-brand img.workface-logo{
-        width: 48%;
-        margin: 4px 0 0 10px;
-    }
-    header .intro-text .intro-lead-in .time{
-        margin-bottom: 15px;
-    }
-    .navbar-default .navbar-brand{
-        position: absolute;
-    }
-    header .img-header{
-        margin: -180px auto 0 -15px;
-    }
-}
 
-@media screen and (min-width: 768px) and (max-width: 990px){
-    header .img-header{
-        margin: -180px auto 0 -15px;
+@media screen and (max-width: 480px) {
+    section h2.section-heading img.workshop-logo{
+        width: 110px;
     }
+    .sharelist{
+        max-height: none;
+        height: 100%;
+        text-align: center;
+    }
+    .sharelist .sharelist-presenter{
+        float: none;
+        width: 100%;
+    }
+    .sharelist .sharelist-content{
+        float: none;
+        width: 100%;
+    }
+    header .img-header{
+        margin: -135px auto 0 -11px;
+    }
+
 }
